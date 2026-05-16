@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio pessoal — desenvolvedor criativo com projetos inovadores." />
+  <title>Portfólio | Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background particles -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <div class="wrapper">
+
+    <!-- Header / Profile -->
+    <header class="hero">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <span>👨‍💻</span>
+        </div>
+      </div>
+      <h1 class="hero-name">Seu Nome</h1>
+      <p class="hero-role">Desenvolvedor Full Stack</p>
+      <div class="hero-badges">
+        <span class="badge">💻 Código</span>
+        <span class="badge">🎨 Design</span>
+        <span class="badge">🚀 Inovação</span>
+      </div>
+    </header>
+
+    <!-- Tabs Navigation -->
+    <nav class="tabs-nav" role="tablist">
+      <button class="tab-btn active" data-tab="about" role="tab" aria-selected="true" id="tab-about">
+        <span class="tab-icon">👤</span>
+        <span>Sobre</span>
+      </button>
+      <button class="tab-btn" data-tab="projects" role="tab" aria-selected="false" id="tab-projects">
+        <span class="tab-icon">🗂️</span>
+        <span>Projetos</span>
+      </button>
+      <button class="tab-btn" data-tab="skills" role="tab" aria-selected="false" id="tab-skills">
+        <span class="tab-icon">⚡</span>
+        <span>Skills</span>
+      </button>
+      <button class="tab-btn" data-tab="contact" role="tab" aria-selected="false" id="tab-contact">
+        <span class="tab-icon">✉️</span>
+        <span>Contato</span>
+      </button>
+      <div class="tab-indicator"></div>
+    </nav>
+
+    <!-- Tab Panels -->
+    <main class="tab-content">
+
+      <!-- ── ABOUT ── -->
+      <section class="tab-panel active" id="panel-about" role="tabpanel" aria-labelledby="tab-about">
+        <div class="section-header">
+          <h2>Olá, mundo! 👋</h2>
+          <p class="section-subtitle">Um pouco sobre quem eu sou</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card card">
+            <span class="card-icon">🎯</span>
+            <h3>Missão</h3>
+            <p>Construir experiências digitais que unem funcionalidade e beleza, transformando ideias em realidade através do código.</p>
+          </div>
+          <div class="about-card card">
+            <span class="card-icon">📍</span>
+            <h3>Localização</h3>
+            <p>Brasil 🇧🇷 — disponível para projetos remotos em qualquer lugar do mundo.</p>
+          </div>
+          <div class="about-card card">
+            <span class="card-icon">🌱</span>
+            <h3>Em aprendizado</h3>
+            <p>Explorando novas tecnologias a cada dia. Atualmente focado em IA, sistemas escaláveis e design systems.</p>
+          </div>
+          <div class="about-card card">
+            <span class="card-icon">💡</span>
+            <h3>Interesses</h3>
+            <p>Open source, UX/UI, arquitetura de software, e criar produtos que realmente fazem diferença.</p>
+          </div>
+        </div>
+
+        <div class="bio-block card">
+          <p class="bio-text">
+            Sou um desenvolvedor apaixonado por tecnologia e resolução de problemas. Gosto de transformar conceitos complexos em interfaces simples e intuitivas. Aqui você encontrará os meus projetos e um pouco da minha jornada no mundo da programação.
+          </p>
+          <div class="bio-stats">
+            <div class="stat">
+              <span class="stat-value">0+</span>
+              <span class="stat-label">Projetos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-value">∞</span>
+              <span class="stat-label">Curiosidade</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Dedicação</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section class="tab-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects">
+        <div class="section-header">
+          <h2>Projetos 🗂️</h2>
+          <p class="section-subtitle">O que estou construindo</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card card" id="project-1">
+            <div class="project-header">
+              <div class="project-icon">🐦</div>
+              <div class="project-status status-active">Em andamento</div>
+            </div>
+            <h3 class="project-title">Twitter Clone</h3>
+            <p class="project-desc">Uma recriação do Twitter com Next.js, focando em arquitetura escalável, feed em tempo real e UX fiel ao original.</p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-link">Ver Código →</a>
+              <a href="#" class="btn-link btn-demo">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card card placeholder-card" id="project-2">
+            <div class="project-header">
+              <div class="project-icon">🚀</div>
+              <div class="project-status status-soon">Em breve</div>
+            </div>
+            <h3 class="project-title">Próximo Projeto</h3>
+            <p class="project-desc">Algo incrível está chegando. Fique de olho neste espaço — novas ideias sempre surgindo.</p>
+            <div class="project-tags">
+              <span class="tag">???</span>
+            </div>
+            <div class="project-links">
+              <span class="btn-link muted">Em desenvolvimento…</span>
+            </div>
+          </article>
+
+          <article class="project-card card placeholder-card" id="project-3">
+            <div class="project-header">
+              <div class="project-icon">💡</div>
+              <div class="project-status status-soon">Em breve</div>
+            </div>
+            <h3 class="project-title">Ideia Futura</h3>
+            <p class="project-desc">Mais projetos a caminho. Este portfólio será atualizado conforme novos projetos ganham vida.</p>
+            <div class="project-tags">
+              <span class="tag">???</span>
+            </div>
+            <div class="project-links">
+              <span class="btn-link muted">Em desenvolvimento…</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── SKILLS ── -->
+      <section class="tab-panel" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills">
+        <div class="section-header">
+          <h2>Habilidades ⚡</h2>
+          <p class="section-subtitle">Tecnologias que uso no dia a dia</p>
+        </div>
+
+        <div class="skills-container">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="85">
+                <div class="skill-info">
+                  <span class="skill-name">React / Next.js</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+              </div>
+              <div class="skill-item" data-level="80">
+                <div class="skill-info">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              </div>
+              <div class="skill-item" data-level="75">
+                <div class="skill-info">
+                  <span class="skill-name">CSS / Tailwind</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Backend</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="70">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+              </div>
+              <div class="skill-item" data-level="65">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-pct">65%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+              </div>
+              <div class="skill-item" data-level="60">
+                <div class="skill-info">
+                  <span class="skill-name">SQL / Databases</span>
+                  <span class="skill-pct">60%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Ferramentas</h3>
+            <div class="tools-grid">
+              <div class="tool-chip">🐙 Git</div>
+              <div class="tool-chip">🐳 Docker</div>
+              <div class="tool-chip">☁️ Vercel</div>
+              <div class="tool-chip">🎨 Figma</div>
+              <div class="tool-chip">📦 npm</div>
+              <div class="tool-chip">🔧 VS Code</div>
+              <div class="tool-chip">🔍 ESLint</div>
+              <div class="tool-chip">⚡ Vite</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section class="tab-panel" id="panel-contact" role="tabpanel" aria-labelledby="tab-contact">
+        <div class="section-header">
+          <h2>Contato ✉️</h2>
+          <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-links">
+            <a href="mailto:seuemail@email.com" class="contact-card card" id="contact-email">
+              <span class="contact-icon">📧</span>
+              <div>
+                <div class="contact-label">E-mail</div>
+                <div class="contact-value">seuemail@email.com</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card card" id="contact-github">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">github.com/seuperfil</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-card card" id="contact-linkedin">
+              <span class="contact-icon">💼</span>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/seuperfil</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener" class="contact-card card" id="contact-twitter">
+              <span class="contact-icon">🐦</span>
+              <div>
+                <div class="contact-label">Twitter / X</div>
+                <div class="contact-value">@seuperfil</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+          </div>
+
+          <form class="contact-form card" id="contact-form" onsubmit="handleForm(event)">
+            <h3>Envie uma mensagem</h3>
+            <div class="form-group">
+              <label for="form-name">Nome</label>
+              <input type="text" id="form-name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="form-email">E-mail</label>
+              <input type="email" id="form-email" placeholder="seuemail@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Mensagem</label>
+              <textarea id="form-message" rows="4" placeholder="Olá! Gostaria de conversar sobre…" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="btn-send">Enviar mensagem ✉️</button>
+            <p class="form-success" id="form-success" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Feito com ☕ e muito código · <span id="footer-year"></span></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
